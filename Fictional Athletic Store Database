@@ -1,0 +1,20 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, color TEXT, price INTEGER, stock INTEGER);
+
+INSERT INTO store VALUES
+(1, "Basketball", "Orange", 15, 20),
+(2, "Baseball", "White", 5, 80),
+(3, "Football", "Brown", 15, 40),
+(4, "Tennis Balls", "Green", 6, 22),
+(5, "Golf Balls", "White", 10, 10),
+(6, "Volleyball", "Red, White, and Blue", 12, 7),
+(7, "Baseball Bat", "Black", 75, 4),
+(8, "Baseball Glove", "Tan", 55, 4),
+(9, "Batting Gloves", "Black and White", 22, 5),
+(10, "Cleats", "Multi-colored", 80, 17),
+(11, "Tennis Racquet", "Blue", 50, 2),
+(12, "Headband", "White", 7, 3),
+(13, "Running shoes", "Multi-colored", 50, 32),
+(14, "Golf Clubs", "Silver and Black", 450, 1),
+(15, "Mouthguard", "Black", 2, 21);
+
+SELECT item, price, stock FROM store ORDER BY price desc; 
